@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>HiFi</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+<div class="container top-container">
+  <div class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-bar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HI-FI</a>
+      </div>
+      <div class="collapse navbar-collapse" id="nav-bar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"> <span class="glyphicon glyphicon-home"> </span>  <span class="sr-only">(current)</span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+           <li class="active"><a href="produkter.html">Produkter</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+       
+
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+            <ul id="nav_login" class="dropdown-menu login-nav-dropdown">
+              <li>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <strong>Login with</strong>
+                    </div>
+                    <div class="col-xs-12">
+                      <button type="button" class="btn btn-primary">Facebook</button>
+                      <button type="button" class="btn btn-info">Twitter</button>
+                    </div>
+                    <div class="col-xs-12 separator">
+                      Or login here
+                    </div>
+                    <div class="col-xs-12">
+                      <form>
+                        <div class="form-group">
+                          <label for="txt_email">Email</label>
+                          <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                            <input type="email" class="form-control" id="txt_email" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="txt_password">Password</label>
+                          <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                            <input type="password" class="form-control" id="txt_password" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Remember me
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <button type="button" class="btn btn-primary btn-block">Sign in</button>
+                        </div>
+                        <div class="form-group">
+                          <a href="#">Forgot password</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+          <div id="imaginary_container">
+              <div class="input-group stylish-input-group">
+                  <input type="text" class="form-control bg-info" id="searchtekst" placeholder="Search">
+                  <span class="input-group-addon">
+                              <button class="bg-info" id="searchbtn">
+                                  <span class="glyphicon glyphicon-search"></span>
+                  </button>
+                  </span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<div class="container">
+
+    <div class="col-xs-12" id="products">
+    <div class="col-md-4 column productbox top15">
+        <div class="product_img"></div>
+        <div class="producttitle"></div>
+
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading ">
+					<h3 class="panel-title"><strong>Produkt Info</strong></h3>
+					<span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+				</div>
+				<div class="panel-body bg-primary"><div  class="beskrivelse"></div></div>
+			</div>
+		</div>
+            
+
+        
+        <div class="productprice">
+            <div class="pull-right"><a href="#" class="btn btn-info btn-sm" role="button">BUY</a></div>
+            <div class="pricetext"></div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+    <div class="container">
+<div class="col-sm-12 col-lg-12 col-xs-offset-0 col-xs-12 col-md-offset-0 col-md-12 well">
+    <div class="col-xs-6 col-md-6"> <strong>HI-FI, Inc.</strong><br>
+            Pulsen 8, Danmark<br>
+            4000, Roskilde<br>
+            <abbr title="Phone">P:</abbr> (+45)49203375 </div>
+          <div class="col-sm-5 col-xs-6 col-md-6">
+            <address>
+              <strong>CVR</strong><br>
+              <a>65645345345346</a>
+            </address>
+          </div>
+          <div class="col-sm-4 col-xs-6 col-xs-offset-0 col-md-6"> <strong>Full Name</strong><br>
+            <a href="mailto:#">HIFI@gmail.com</a></div>
+        </div>
+    </div>
+
+    <!--<div id="productbox"></div>-->
+
+    <script>
+        fetch('http://localhost:1337/produkter')
+            .then((response) => {
+                // grib svarets indhold (body) og send det som et json objekt til næste .then()
+                return response.json();
+            })
+            .then((data) => {
+                let products = $("#products");
+                let all_products = $(".productbox");
+
+                for (let d = 0; d < data.length - 1; d++) {
+                    products.append(all_products[0].outerHTML);
+                }
+                data.forEach(function(element,index) {
+                    // nu er json objektet lagt ind i data variablen, udskriv data
+                    console.log(element);
+                    document.getElementsByClassName("producttitle")[index].innerHTML += element.navn;
+                    document.getElementsByClassName("pricetext")[index].innerHTML += element.pris;
+                    document.getElementsByClassName("beskrivelse")[index].innerHTML += element.beskrivelse;
+                    document.getElementsByClassName("product_img")[index].innerHTML += "<img src=" + element.img + ">" ;
+                }, this);
+            })
+    </script>
+<script src="scripts/exp.js"></script>
+<script src="scripts/soeg.js"></script>
+</body>
+
+</html>

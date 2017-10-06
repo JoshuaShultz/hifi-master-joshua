@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>HiFi</title>
+</head>
+
+<body>
+<div class="container top-container">
+  <div class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-bar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">HI-FI</a>
+      </div>
+      <div class="collapse navbar-collapse" id="nav-bar">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html"> <span class="glyphicon glyphicon-home"> </span>  <span class="sr-only">(current)</span></a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
+           <li><a href="produkter.html">Produkter</a></li>
+            <li class="active"><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+       
+        <form class="navbar-form navbar-right">
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search">
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search
+                  "></span></button>
+              </span>
+            </div>
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+            <ul id="nav_login" class="dropdown-menu login-nav-dropdown">
+              <li>
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <strong>Login with</strong>
+                    </div>
+                    <div class="col-xs-12">
+                      <button type="button" class="btn btn-primary">Facebook</button>
+                      <button type="button" class="btn btn-info">Twitter</button>
+                    </div>
+                    <div class="col-xs-12 separator">
+                      Or login here
+                    </div>
+                    <div class="col-xs-12">
+                      <form>
+                        <div class="form-group">
+                          <label for="txt_email">Email</label>
+                          <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
+                            <input type="email" class="form-control" id="txt_email" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="txt_password">Password</label>
+                          <div class="input-group">
+                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
+                            <input type="password" class="form-control" id="txt_password" placeholder="Password">
+                          </div>
+                        </div>
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox"> Remember me
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <button type="button" class="btn btn-primary btn-block">Sign in</button>
+                        </div>
+                        <div class="form-group">
+                          <a href="#">Forgot password</a>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="jumbotron jumbotron-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12 text-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2252.641941103154!2d12.083864415878286!3d55.62564578051955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525febe81aa287%3A0x9864d6527aec94c3!2sPulsen+8%2C+4000+Roskilde!5e0!3m2!1sda!2sdk!4v1506929080608" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                 </div>
+                
+          </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-offset-0 col-md-12">
+                <div class="well well-sm">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" /></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subject">
+                                        Subject</label>
+                                    <select id="subject" name="subject" class="form-control" required>
+                                        <option value="na" selected="">Choose One:</option>
+                                        <option value="service">General Customer Service</option>
+                                        <option value="suggestions">Suggestions</option>
+                                        <option value="product">Product Support</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Message</label>
+                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                    Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+          </div>
+          </div>
+          <div class="col-sm-12 col-lg-12 col-xs-offset-0 col-xs-12 col-md-offset-0 col-md-12 well">
+          <div class="col-xs-6 col-md-6"> <strong>HI-FI, Inc.</strong><br>
+            Pulsen 8, Danmark<br>
+            4000, Roskilde<br>
+            <abbr title="Phone">P:</abbr> (+45)49203375 </div>
+          <div class="col-sm-5 col-xs-6 col-md-6">
+            <address>
+              <strong>CVR</strong><br>
+              <a>65645345345346</a>
+            </address>
+          </div>
+                    <div class="col-sm-4 col-xs-6 col-xs-offset-0 col-md-6"> <strong>Full Name</strong><br>
+            <a href="mailto:#">HIFI@gmail.com</a> </div>
+</div>
+
+
+        
+    </div>
+
+
+    <script src="scripts/contactform.js"></script>
+</body>
+
+</html>
