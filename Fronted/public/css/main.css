@@ -66,7 +66,7 @@ body {
 	height: 20px;
 	text-align: left;
 	text-decoration: none;
-	color: rgba(249,249,249,1.00);
+	color: #000000;
 	background-color: rgba(103,186,255,1.00);
 	overflow:hidden;
 	    -webkit-transition: width 2s, height 4s; /* Safari */
@@ -84,7 +84,7 @@ body {
 }
 
 .beskrivelse{
-	color: #ffffff;	
+	color: #000000;	
 	
 	}
 
@@ -95,3 +95,42 @@ body {
 .panel {
 	margin-top:10px;
 }
+
+#myCarousel .nav a small
+{
+    display: block;
+}
+#myCarousel .nav
+{
+    background: #eee;
+}
+.nav-justified > li > a
+{
+    border-radius: 0px;
+}
+.nav-pills>li[data-slide-to="0"].active a { background-color: #16a085; }
+.nav-pills>li[data-slide-to="1"].active a { background-color: #e67e22; }
+.nav-pills>li[data-slide-to="2"].active a { background-color: #2980b9; }
+.nav-pills>li[data-slide-to="3"].active a { background-color: #8e44ad; }
+
+.clickable
+{
+    cursor: pointer;
+}
+
+.clickable .glyphicon
+{
+    background: rgba(0, 0, 0, 0.15);
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 4px
+}
+
+.panel-heading span
+{
+    margin-top: -23px;
+    font-size: 15px;
+    margin-right: -9px;
+}
+a.clickable { color: inherit; }
+a.clickable:hover { text-decoration:none; }

@@ -138,3 +138,9 @@ Fredag afleveringsdag fuld fart og fokus på søgning jeg fandt ud af at søgnin
 
 ## Evaluering Uge 3
 Den sidste uge har været særligt lærerig og vigtig for at få sat alt den information vi lærte de sidste forrige uger i praksis. selvom jeg nogle gange har være lidt fustreret med projektet har det været givdigt for routine og forståelse 
+
+##### Planen for Uge 4 
+I denne uge vil jeg særligt fokusere på to opgaver nemlig logind system og et cms til produkter. 
+## Mål
+- Logind (CMS)
+- produkt (cms)

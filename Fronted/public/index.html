@@ -9,11 +9,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
-    <title>HiFi</title>
+    <title>CMS</title>
 </head>
 
 <body>
-<div class="container top-container well ">
+
+<div class="container top-container">
   <div class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -30,7 +31,7 @@
           <li class="active"><a href="index.html"> <span class="glyphicon glyphicon-home"> </span>  <span class="sr-only">(current)</span></a></li>
           <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
            <li><a href="produkter.html">Produkter</a></li>
-          <li ><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
         </ul>
        
         <form class="navbar-form navbar-right">
@@ -100,47 +101,61 @@
     </div>
   </div>
 </div>
-<div class="container well">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-
-                <div class="item active col-md-5 col-md-offset-4 col-xs-8 col-xs-offset-2">
-                    <img src="img/cd_afspiller_1-01.jpg"  alt="" style="width:100%; height: 250px;">
-                </div>
-
-                <div class="item col-md-5 col-md-offset-4 col-xs-10 col-xs-offset-1">
-                    <img src="img/dvd_afspiller_1-01.jpg"  alt="" style="width:100%; height: 250px;">
-                </div>
-                <div class="item col-md-5 col-md-offset-4 col-xs-10 col-xs-offset-1">
-                    <img src="img/cd_afspiller_4-01.jpg"  alt="" style="width:100%; height: 250px;">
-                </div>
-                <div class="item col-md-offset-4 col-md-5 col-xs-10 col-xs-offset-1">
-                    <img src="img/dvd_afspiller_3-01.jpg" alt="" style="width:100%; height: 250px;">
-                </div>
-
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-
+  <div class="container well">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+              <div class="item active">
+                  <img src="img/slide-05.png" width="3750" height="1250" alt=""/>
+                  <div class="carousel-caption">
+                      <h3>
+                          Pladespillere</h3>
 </div>
+              </div>
+              <!-- End Item -->
+              <div class="item">
+                  <img src="img/slide-06.png" width="3750" height="1250" alt=""/>
+                  <div class="carousel-caption">
+                      <h3>
+                          Intforstærkere</h3>
+
+                  </div>
+              </div>
+              <!-- End Item -->
+              <div class="item">
+                  <img src="img/slide-04.png" width="3750" height="1250" alt=""/>
+                  <div class="carousel-caption">
+                      <h3>
+                          Cdafspillere</h3>
+
+                  </div>
+              </div>
+              <!-- End Item -->
+              <div class="item">
+                  <img src="img/slide-07.png" width="3750" height="1250" alt=""/>
+                  <div class="carousel-caption">
+                      <h3>
+                          Højtalere</h3>
+                      <p>
+</p>
+                  </div>
+              </div>
+              <!-- End Item -->
+          </div>
+          <!-- End Carousel Inner -->
+          <ul class="nav nav-pills nav-justified">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Pladespillere<small>Billigt
+                  køb her nu</small></a></li>
+              <li data-target="#myCarousel" data-slide-to="1"><a href="#">intforstærkere<small>Billigt
+                  køb her nu</small></a></li>
+              <li data-target="#myCarousel" data-slide-to="2"><a href="#">CDafspillere<small>Billigt
+                  køb her nu</small></a></li>
+              <li data-target="#myCarousel" data-slide-to="3"><a href="#">Højtalere<small>Billigt
+                  køb her nu</small></a></li>
+          </ul>
+      </div>
+      <!-- End Carousel -->
+  </div>
 
 <div class=" container well">
 
@@ -234,6 +249,29 @@
             }) 
     </script>
 <script src="scripts/exp.js"></script>
+<script>$(document).ready( function() {
+    $('#myCarousel').carousel({
+    	interval:   4000
+	});
+	
+	var clickEvent = false;
+	$('#myCarousel').on('click', '.nav a', function() {
+			clickEvent = true;
+			$('.nav li').removeClass('active');
+			$(this).parent().addClass('active');		
+	}).on('slid.bs.carousel', function(e) {
+		if(!clickEvent) {
+			var count = $('.nav').children().length -1;
+			var current = $('.nav li.active');
+			current.removeClass('active').next().addClass('active');
+			var id = parseInt(current.data('slide-to'));
+			if(count == id) {
+				$('.nav li').first().addClass('active');	
+			}
+		}
+		clickEvent = false;
+	});
+}); </script>
 </body>
 
 </html>
