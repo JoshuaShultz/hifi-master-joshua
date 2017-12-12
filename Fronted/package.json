@@ -1,15 +1,12 @@
 {
   "name": "fronted",
   "version": "1.0.0",
-  "description": "Hifi online webshop",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Joshua",
-  "license": "ISC",
-  "dependencies": {
-    "browser-sync": "^2.18.13"
-  }
+  "author": "Joshua_Schultz",
+  "license": "ISC"
 }

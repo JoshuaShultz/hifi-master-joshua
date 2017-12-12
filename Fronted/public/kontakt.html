@@ -9,10 +9,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
-    <title>HiFi</title>
+    <title>CMS</title>
 </head>
 
 <body>
+
 <div class="container top-container">
   <div class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -27,34 +28,24 @@
       </div>
       <div class="collapse navbar-collapse" id="nav-bar">
         <ul class="nav navbar-nav">
-          <li><a href="index.html"> <span class="glyphicon glyphicon-home"> </span>  <span class="sr-only">(current)</span></a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span></a></li>
-           <li><a href="produkter.html">Produkter</a></li>
-            <li class="active"><a href="kontakt.html">Kontakt</a></li>
+          <li><a href="index.html"> <span class="glyphicon glyphicon-home">  </span> &nbsp; Forside <span class="sr-only">(current)</span></a></li>
+           <li><a href="produkter.html"> <span class="glyphicon glyphicon-th-list"></span> &nbsp; Produkter</a></li>
+            <li class="active"><a href="kontakt.html"> <span class="glyphicon glyphicon-envelope"></span> &nbsp;&nbsp; Kontakt</a></li>
+
         </ul>
        
-        <form class="navbar-form navbar-right">
-          <div class="form-group">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search">
-              <span class="input-group-btn">
-                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search
-                  "></span></button>
-              </span>
-            </div>
-          </div>
-        </form>
+
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
             <ul id="nav_login" class="dropdown-menu login-nav-dropdown">
               <li>
-                <div class="container-fluid">
+                <div class="container-fluid dropdown-header">
                   <div class="row">
                     <div class="col-xs-12">
                       <strong>Login with</strong>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-6">
                       <button type="button" class="btn btn-primary">Facebook</button>
                       <button type="button" class="btn btn-info">Twitter</button>
                     </div>
@@ -62,33 +53,40 @@
                       Or login here
                     </div>
                     <div class="col-xs-12">
-                      <form>
-                        <div class="form-group">
-                          <label for="txt_email">Email</label>
-                          <div class="input-group">
-                            <div class="input-group-addon"><span class="glyphicon glyphicon-user"></span></div>
-                            <input type="email" class="form-control" id="txt_email" placeholder="Email">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="txt_password">Password</label>
-                          <div class="input-group">
-                            <div class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></div>
-                            <input type="password" class="form-control" id="txt_password" placeholder="Password">
-                          </div>
-                        </div>
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Remember me
-                          </label>
-                        </div>
-                        <div class="form-group">
-                          <button type="button" class="btn btn-primary btn-block">Sign in</button>
-                        </div>
-                        <div class="form-group">
-                          <a href="#">Forgot password</a>
-                        </div>
-                      </form>
+    <form class="form-horizontal loginForm">
+        <fieldset>
+
+            <!-- Password input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="">Brugernavn</label>
+                <div class="col-md-5 col-md-offset-2">
+                    <input id="username" name="username" type="text" placeholder="" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="">Adgangskode</label>
+                <div class="col-md-5 col-md-offset-2">
+                    <input id="password" name="password" type="password" placeholder="" class="form-control input-md">
+
+                </div>
+            </div>
+
+            <!-- Button (Double) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for=""></label>
+                <div class="col-md-6">
+                    <button id="" name="" class="btn" type="submit">Log Ind</button>
+                </div>
+            </div>
+
+        </fieldset>
+        <fieldset>
+          &nbsp;
+        </fieldset>
+    </form>
                     </div>
                   </div>
                 </div>
@@ -121,7 +119,7 @@
                                 <div class="form-group">
                                     <label for="name">
                                         Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                    <input type="text" class="form-control" id="navn" placeholder="Enter name" required="required" />
                                 </div>
                                 <div class="form-group">
                                     <label for="email">
@@ -134,7 +132,7 @@
                                 <div class="form-group">
                                     <label for="subject">
                                         Subject</label>
-                                    <select id="subject" name="subject" class="form-control" required>
+                                    <select id="emne" name="subject" class="form-control" required>
                                         <option value="na" selected="">Choose One:</option>
                                         <option value="service">General Customer Service</option>
                                         <option value="suggestions">Suggestions</option>
@@ -146,11 +144,11 @@
                                 <div class="form-group">
                                     <label for="name">
                                         Message</label>
-                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required placeholder="Message"></textarea>
+                                    <textarea name="message" id="besked" class="form-control" rows="9" cols="25" required placeholder="Message"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-12">
-                                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                <button type="submit" class="btn btn-primary pull-right" id="gem">
                                     Send Message</button>
                             </div>
                         </div>
@@ -177,8 +175,9 @@
         
     </div>
 
-
+    <script src="admin/scripts/logind.js"></script>
     <script src="scripts/contactform.js"></script>
+    <script src="scripts/besked.js"></script>
 </body>
 
 </html>

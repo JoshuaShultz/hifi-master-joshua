@@ -25,18 +25,9 @@ Nu er det tirsdag eftermiddag og jeg er startet på html og css kodning, jeg ble
 
 #### onsdag d. 20
 Idag har jeg ledt efter forskellige moduler til f.eks. Navigationsbar og login forberedende moduler. det går støt og rolig der ud af. Indexsiden er blevet lavet og har sammenhængende navigation mellem Index, produkt- og kontakt-siden. Da jeg skulle til at kigge på slideshow fandt jeg ud af at alle billiderne var i både forskellige formater og størrelse hvilket fik mig til at skabe nye filer med samme størrelse og format jeg brugte progammet: Illustrator da selvom det var en særdeles langsommelig process var betydeligt hurtiger end hvis jeg skulle have brugt illustrator. 
-###### Nåede målaf data undersøgte jeg det grundig hvad andre gjorde. Meget af det grafiske arbejde skulle egentlig bare overståes og det blev det gjordt i denne uge.
+###### Nåede mål
+af data undersøgte jeg det grundig hvad andre gjorde. Meget af det grafiske arbejde skulle egentlig bare overståes og det blev det gjordt i denne uge.
 
-# HI-FI - Markdown -Uge 2
-##### Planen for Uge 2  
-- Oprettelse af api
-- Node server  
-- Fetch Data  
-- Data element  
-- Dynamiske side 
-- Søge med api
-- Infodropdown
-- Mappeordning
 #### Torsdag d. 21
 Så blev det torsdag og idag lavede jeg databasen. men da jeg så på billiderne i egenskaber var de betydeligt for store så derefter skalerede jeg alle billiderne ned til 50% via en online editor sådan at de cirka var 100px x 200px. da jeg var færdig med det lavede jeg alle databasens produkter med relationer o.s.v. jeg et ER diagram en styleguide og et sitemap over hjemmesiden.
 ###### Nåede mål
@@ -44,6 +35,7 @@ Så blev det torsdag og idag lavede jeg databasen. men da jeg så på billiderne
 - Billideredigering 100%
 - Opbygge Databasen 80%
 - Udvikle og designe 100%
+
 #### fredag d. 22
 Fredag den sidste dag i denne uge og det er tid til at organisere lidt og få et overblik jeg har tilføjet nogle af de sidste features på bootstrap siden så som responsive design som breakpoints og bootstrap desktop classes eftersom siden blev udviklet mobile first. de sidste relationer blev også dannet i databasen. de sidste ting er ved at falde på plads.
 
@@ -56,23 +48,20 @@ Fredag den sidste dag i denne uge og det er tid til at organisere lidt og få et
 - Billideredigering 10er 100%
 - Fetch data 80%
 
-#### Torsdag d.28
-Det er nu endelig torsdag og jeg har været igennem flere løsninger til at loade data ind i forskellige elementer så det endte med at jeg fik hjælp af Emil igen til løsningen på det så det vi gjorde var man laver en "Skabelon" og lave foreach med en genereret id der kopiere htmlen og paster den for hver gang der bliver fetched et element.
-###### Nåede mål
-- Oprettelse af API 100%
-- Fetch data 100%
-- Dynamiske side 70%
-
-#### fredag d.29
-Fredagen er her og jeg har fuldført skabelon elementet og integreret et google kort på kontaktsiden der manglede kun et element mere til elementet der skulle kopieres et dropdown panel med mere info om pruduktet hvilket var et langt sværer arbejde end jeg troede fordi det panel jeg integrerede var lang sværer end jeg troede fordi panelet brugte et id. både forside og kantaktside loader data fra databasen.
-###### Nåede mål
-- Dynamiske side 100%
-
-
-
 ## Evaluering Uge 1
 (OBS var syg torsdag og fredag)
 Set i backspejlet burde jeg havde haft mere fokus allerede her på fetch fra databasen men jeg valgte at øve mig ekstra i at bruge bootstrap eftersom jeg før den første uge her ikke var særligt rutineret i praksis i bootstrap. selvom jeg ikke arbejdede med udtrækning 
+
+# HI-FI - Markdown -Uge 2
+##### Planen for Uge 2  
+- Oprettelse af api
+- Node server  
+- Fetch Data  
+- Data element  
+- Dynamiske side 
+- Søge med api
+- Infodropdown
+- Mappeordning
 
 #### Mandag d.25
 Nu er det mandag og det er tid til at gøre siden dynamisk med info fra databsen via et api, så jeg startede med at sætte apiet op fra franks model sådan at jeg via apiet kan kalde på databasen via et npm install mysql2, express og restify. jeg organiserede blandt andet også hele mit mappesystem.
@@ -88,8 +77,17 @@ Takket være Emil berg fik jeg forklaret helt hvordan apiet fungere efter det la
 - Oprettelse af api 80%
 - Node frontend serv
 
-## Evaluering Uge 2
-I denne uge fokuserede jeg særligt på data og data udskrivelse og i min optik gik det meget godt selvom der var en del frem og tilbage i udviklingprocessen selvom man har fundet en løsning der virker er det desværre ikke altid den rigtige løsning hvilket jeg kan relatere til i lyset af praktikugen. jeg nåede desværre ikke integrere søgning på siden ligeså nåede jeg heller ikke at finde en løsning på infodropdown eftersom alle de elementer jeg har set bruger IDer. Der har været lidt svært at finde hjælp på internettet til at fetche data fra databasen da de fleste bruger det javabaseret databaseprogram Mongodb
+#### Torsdag d.28
+Det er nu endelig torsdag og jeg har været igennem flere løsninger til at loade data ind i forskellige elementer så det endte med at jeg fik hjælp af Emil igen til løsningen på det så det vi gjorde var man laver en "Skabelon" og lave foreach med en genereret id der kopiere htmlen og paster den for hver gang der bliver fetched et element.
+###### Nåede mål
+- Oprettelse af API 100%
+- Fetch data 100%
+- Dynamiske side 70%
+
+#### fredag d.29
+Fredagen er her og jeg har fuldført skabelon elementet og integreret et google kort på kontaktsiden der manglede kun et element mere til elementet der skulle kopieres et dropdown panel med mere info om pruduktet hvilket var et langt sværer arbejde end jeg troede fordi det panel jeg integrerede var lang sværer end jeg troede fordi panelet brugte et id. både forside og kantaktside loader data fra databasen.
+###### Nåede mål
+- Dynamiske side 100%
 
 ###### Ugens fremskridt.
 - Oprettelse af api 100%
@@ -101,6 +99,10 @@ I denne uge fokuserede jeg særligt på data og data udskrivelse og i min optik 
 - Infodropdown 80%
 - Mappeordning 100%
 
+## Evaluering Uge 2
+I denne uge fokuserede jeg særligt på data og data udskrivelse og i min optik gik det meget godt selvom der var en del frem og tilbage i udviklingprocessen selvom man har fundet en løsning der virker er det desværre ikke altid den rigtige løsning hvilket jeg kan relatere til i lyset af praktikugen. jeg nåede desværre ikke integrere søgning på siden ligeså nåede jeg heller ikke at finde en løsning på infodropdown eftersom alle de elementer jeg har set bruger IDer. Der har været lidt svært at finde hjælp på internettet til at fetche data fra databasen da de fleste bruger det javabaseret databaseprogram Mongodb
+
+# HI-FI - Markdown -Uge 3
 ##### Planen for Uge 3 
 - Kategorier
 - Infodropdown
@@ -139,8 +141,97 @@ Fredag afleveringsdag fuld fart og fokus på søgning jeg fandt ud af at søgnin
 ## Evaluering Uge 3
 Den sidste uge har været særligt lærerig og vigtig for at få sat alt den information vi lærte de sidste forrige uger i praksis. selvom jeg nogle gange har være lidt fustreret med projektet har det været givdigt for routine og forståelse 
 
+# HI-FI - Markdown -Uge 4
 ##### Planen for Uge 4 
 I denne uge vil jeg særligt fokusere på to opgaver nemlig logind system og et cms til produkter. 
 ## Mål
-- Logind (CMS)
-- produkt (cms)
+- statisk
+- Produkt 
+- tilføj
+- rediger
+- produktliste
+
+#### Mandag d.6
+Mandag, jeg er gået igange med at lave en admin administrerede side til at kunne ændre mine produkter, så jeg startede først med at lave en statisk side til hele adminpanelet. så efter noget søgen fik jeg den påkrævede viden til at udbygge mit api til at trække produktinfo ind på panelets første side med oversigten over alle produkterne.
+###### Nåede mål
+- statisk 60%
+- Produkt 100%
+- produktliste 20%
+
+#### Tirsdag d.7
+Idag fik jeg endelig krammet på hvordan jeg skulle loade alle produkterne ind gennem min route, som jeg egentligt bare kopierede og rettede til med de tilsvarende data som skulle loades ind. Desuden har jeg opdateret det statiske design på opret produkt siden.
+###### Nåede mål
+- tilføje 60%
+- statisk 70%
+- produktliste 100%
+
+#### Onsdag d.8
+Idag kiggede jeg lidt på hvordan jeg kunne tilføje produkter til min hjemmeside via mit adminpanel, her brugte jeg en udlagt opgave som oprindeligt var beregnet til at gemme beskeder i databasen, hvilket ville virke perfekt til at tilføje produkter med deres relevante oplysninger.
+###### Nåede mål
+- tilføje 100%
+- statisk 80%
+
+#### Torsdag d.9
+Idag er jeg begyndt på at forsøge at lave funktionen til at kunne redigere, jeg har allerede fået loaded mit indholde ind, men jeg skal finde en metode til at få overskrevet de eksiterende data i databasen. jeg har nu prøvet at overskrive dataerne ved at opdatere min databasen når man trykker på bekræft.
+###### Nåede mål
+- Redigere 100%
+- statisk 90%
+
+#### Fredag d.10
+Ved ikke med sikkerhed hvad der skete, men måtte installere alle modulerne igen, så jeg vil gætte på jeg har droppet alle node modulerne i en eller anden form for mappe koruption. Derefter lavede jeg en funktion til at kunne slette produkter fra databasen 
+###### Nåede mål
+- GENOPRETNING 100%
+-  Slette %100
+
+## Evaluering Uge 4
+Denne uge har været ganske lærrig og jeg har fordybet forståelsen for hvordan jeg både kan tilføje funktioner ved modifikationer eller tilføjelser, gennem moduler og tilføjelser af javascript. ikke den mest produktive uge men den mest lærerige
+
+# HI-FI - Markdown -Uge 5
+##### Planen for Uge 5
+- Mappesystemet
+- redirect
+- logind
+- logud
+- beskeder
+- frontend
+
+#### Mandag d.13
+Idag har jeg arbejdet med at oprette loginsystemet ved hjælp af den fremlagte kode på github og lave en Admin mappe med seperat frontend system og planlægger hvordan jeg vil gøre det umuligt at komme ind på admin siden uden at have login token i local storage, udover det har jeg tænkt mig at lave mit eget besked system til kunder med spørgsmål, klager og beskeder til moderatorer og butiksejere.
+###### Nåede mål
+- Mappesystemet 100%
+- frontend 45%
+
+#### Tirsdag d.14
+Idag har jeg arbejdet med lukke normale brugere ud ved a kun kunne komme ind gennem Tokens du får når du logger ind, derefter lavede jeg en landingpage for når du endten logger ud eller prøver at komme ind uaftoriseret, ligeså har jeg også lavet javascripten til at redirect dig til landingpagen.
+###### Nåede mål
+- redirect 70%
+- logind 80%
+- frontend 60%
+
+#### Onsdag d.15
+Idag har jeg tænkt mig at lave mit eget besked system til kunder med spørgsmål, klager og beskeder, jeg startede med at ændre min kontaktside til de classes jeg havde valgt dataerne skulle gemmes som for at gøre proscessen at trække dem ind i adminpanelet nemmere.
+derefter brugte jeg samme kode som produktsiden bare med andre data til at trække dataerne ind i kontakten.
+###### Nåede mål
+- beskeder 100%
+- frontend 80%
+
+#### Torsdag d.16
+Idag har jeg tilføjet at man bliver redirected tilbage til produktlisten når du trykker bekræft på opret produkterne. efter det har jeg sikret du ikke kan kommer rundt på admin siden uden den token i local storage, ellers ryger man ud til en landingpage. her har jeg tilføjet en lille navigation til at kunne komme til de forskellige sider efter hvilket formål du har.
+###### Nåede mål
+- frontend 100%
+- logind 100%
+
+#### Fredag d.17
+Idag lavede jeg først logud ved at slette din session token sådan at man bliver smidt ud til landingpage.
+###### Nåede mål
+- logud 100%
+
+## Evaluering Uge 5
+Denne uge har særligt været både lærererig og rutinedannende, i den forstand at jeg både har lært en masse nye måder at gøre tingene på men også hvordan jeg kan omformatere min kode til at tilpasse de forskellige foremål.
+
+# HI-FI - Markdown -Uge 6
+##### Planen for Uge 6 
+I denne uge vil jeg forsøge at optimere brugerens oplevelse så som at loade produktdata in på en side hver gang du vælger et produkt.
+## Mål
+- Produkt side
+- billideupload

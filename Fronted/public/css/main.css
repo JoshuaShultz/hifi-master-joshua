@@ -29,21 +29,10 @@
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
-	
 }
-
-.clickable{
-    cursor: pointer;   
-}
-
 
 .producttitle {
     font-weight: bold;
-    padding: 5px 0 5px 0;
-}
-
-.text {
-    font-weight: normal;
     padding: 5px 0 5px 0;
 }
 
@@ -56,39 +45,12 @@
     font-weight: bold;
     font-size: 1.4em;
 }
-body {
-	background-color: rgba(231,231,231,1.00);
-}
 
+textarea {
+    resize: none;
+ }
 
-.show {
-	width: 100%;
-	height: 20px;
-	text-align: left;
-	text-decoration: none;
-	color: #000000;
-	background-color: rgba(103,186,255,1.00);
-	overflow:hidden;
-	    -webkit-transition: width 2s, height 4s; /* Safari */
-     transition: width 2s, height 1s;
-}
-
-.show:hover{
-	width: 100%;
-	height: 60px;
-	text-align: left;
-	text-decoration: none;
-	color: rgba(249,249,249,1.00);
-	background-color: rgba(103,186,255,1.00);
-	overflow:hidden;
-}
-
-.beskrivelse{
-	color: #000000;	
-	
-	}
-
-.panel-heading span {
+ .panel-heading span {
 	margin-top:-15px;
 }
 

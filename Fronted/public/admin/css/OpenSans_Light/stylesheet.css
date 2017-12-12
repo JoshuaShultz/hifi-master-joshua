@@ -1,0 +1,14 @@
+@font-face {
+	font-family: 'OpenSans Light';
+	src: url('OpenSans-Light.ttf') format('truetype');
+}thead tr th {
+	width: 180px;
+}
+.besked .knapper .btn.btn-primary.btn-xs.delete {
+	margin-left: 26px;
+	margin-right: auto;
+}
+#beskeder .besked .tekst {
+	margin-top: 2px;
+	height: 21px;
+}
