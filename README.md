@@ -102,7 +102,7 @@ Fredagen er her og jeg har fuldført skabelon elementet og integreret et google 
 ## Evaluering Uge 2
 I denne uge fokuserede jeg særligt på data og data udskrivelse og i min optik gik det meget godt selvom der var en del frem og tilbage i udviklingprocessen selvom man har fundet en løsning der virker er det desværre ikke altid den rigtige løsning hvilket jeg kan relatere til i lyset af praktikugen. jeg nåede desværre ikke integrere søgning på siden ligeså nåede jeg heller ikke at finde en løsning på infodropdown eftersom alle de elementer jeg har set bruger IDer. Der har været lidt svært at finde hjælp på internettet til at fetche data fra databasen da de fleste bruger det javabaseret databaseprogram Mongodb
 
-
+# HI-FI - Markdown -Uge 3
 ##### Planen for Uge 3 
 - Kategorier
 - Infodropdown
@@ -141,6 +141,7 @@ Fredag afleveringsdag fuld fart og fokus på søgning jeg fandt ud af at søgnin
 ## Evaluering Uge 3
 Den sidste uge har været særligt lærerig og vigtig for at få sat alt den information vi lærte de sidste forrige uger i praksis. selvom jeg nogle gange har være lidt fustreret med projektet har det været givdigt for routine og forståelse 
 
+# HI-FI - Markdown -Uge 4
 ##### Planen for Uge 4 
 I denne uge vil jeg særligt fokusere på to opgaver nemlig logind system og et cms til produkter. 
 ## Mål
@@ -185,6 +186,7 @@ Ved ikke med sikkerhed hvad der skete, men måtte installere alle modulerne igen
 ## Evaluering Uge 4
 Denne uge har været ganske lærrig og jeg har fordybet forståelsen for hvordan jeg både kan tilføje funktioner ved modifikationer eller tilføjelser, gennem moduler og tilføjelser af javascript. ikke den mest produktive uge men den mest lærerige
 
+# HI-FI - Markdown -Uge 5
 ##### Planen for Uge 5
 - Mappesystemet
 - redirect
@@ -227,6 +229,7 @@ Idag lavede jeg først logud ved at slette din session token sådan at man blive
 ## Evaluering Uge 5
 Denne uge har særligt været både lærererig og rutinedannende, i den forstand at jeg både har lært en masse nye måder at gøre tingene på men også hvordan jeg kan omformatere min kode til at tilpasse de forskellige foremål.
 
+# HI-FI - Markdown -Uge 6
 ##### Planen for Uge 6 
 I denne uge vil jeg forsøge at optimere brugerens oplevelse så som at loade produktdata in på en side hver gang du vælger et produkt.
 ## Mål
